@@ -11,23 +11,21 @@ specifically what is selling and why.
 
 ### Data:
 The source of this data is https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/
-This sheet explores things like the location and type of market an item is being sold at and the opening year 
-as well as the type of item, its weight, fat content, and the sales it has made at specific locations
 
-
+This sheet explores things like the location, type of market, and year established among other factors about the store itself. It also goes over features such as the type of item, weight, fat content, visibility, and the sales it has made at specific locations.
 
 ## Methods
 Renaming the columns for simpler coding is an important step, followed by the usual checks for duplication and NaN values
-I had orginally decided to drop Item weight but I felt leaving the value at zero for the missing data would be more useful, whereas I completely dropped Outlet Size (o_size) because I felt the data was a bit too imprecise, "Medium", "High", etc does not give me much to work with in addition to missing all that data
-I also fixed/replaced the Low Fat & Regular values because some of those are inconsistent, and its noticeable even from a short read in the original csv file.
+I had orginally decided to drop Item weight but I felt leaving the value at zero for the missing data would be more useful, whereas I completely dropped Outlet Size (o_size) because I felt the data was a bit too imprecise, "Medium", "High", etc does not give me much to work with in addition to missing a moderate amount of data.
+I also fixed/replaced the Low Fat & Regular values because some of those are inconsistent, something noticeable even from a short read in the original csv file.
 
 ## Results
 I ended up cleaning the data thouroughly and isolated important values from my Dataframe as a final touch
 the min, max, and average of things like an item's weight, retail price, Item outlet sales, and visibility
 
-I created multiple data visualizations, 2 of which will be outlined below with images, and finally, I created 2 machine learning models and evaluated their performance and decided on which one I thought would work better.
+I created multiple data visualizations, 2 of those mostr advanced will be outlined below with images, but most of them explore the relationship between certain features in order to make observations about the data after it was cleaned.
 
-
+Finally, I created 2 machine learning models and evaluated their performance and decided on which one I thought would work better.
 
 ##### Item Visibility's effect on sales
 ![Scatterplot 1](https://user-images.githubusercontent.com/105755535/176532985-ef8719f4-0a14-4e52-9921-6b09d0e89a11.png)
@@ -37,12 +35,12 @@ I created multiple data visualizations, 2 of which will be outlined below with i
 
 ##### 
 ![Barplot 2](https://user-images.githubusercontent.com/105755535/176514655-dfe94616-2a01-4e99-b2f7-231c66914d16.png)
->A more complex barplot going over the maximum retail price for items purchased by each type of store
+>A complex barplot going over the maximum retail price for items purchased by each type of store
 
 ## Linear Regression vs Regression Trees
 
-Both of the models have issues, they have only a moderate R2 averaging around 50-60 which means an error variance of around 40% and they have high RSME which means errors in the thousands.
-Both of the R2 are pretty close, so this means both are fitted well, the Regression tree one a little more so after its tuning.
+Both of the models built have issues, they have only a moderate R2 averaging around 50-60 which means an error variance of around 40% and they have high RSME which means errors in the thousands.
+Both of the R2 are pretty close, so this means both are fitted well, the Regression tree one was a a little more so after its tuning.
 
 After comparing these 2 and moderate deliberation, I decided the Regtree one was more fitting, literally!
 The Regression tree is slightly more apart in its score than the Line Regression model, but not by a signifcant degree which gives you a stronger 60% on its trained data. its RMSE is both lower than the LineReg's model as well as closer together on train & test than Line's which means the margin for error is lesser as well.
