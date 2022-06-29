@@ -49,13 +49,12 @@ The Regression tree is slightly more apart in its score than the Line Regression
 
 I've put below the 2 most important metrics from the training and test side of both which I went over above
 #### **RegTree important metrics (from the tuned depth 5 model)**
-- R2 Training: 0.6 
-- R2 Training: 0.59
-- DecTree Train RMSE: 1082.7121818891044 
-- Dectree Test RMSE: 1057.5149155444085
+- Dectree5 R2 Training: 0.6 
+- Dectree5 R2 Training: 0.59
+- DecTree5 Train RMSE: 1082.7121818891044 
+- Dectree 5Test RMSE: 1057.5149155444085
 
-I believe the model would work decently for the purposes of this problem but it could use more tuning than is unavailabe from either of these models. The RMSE error is off by thousands
-
+I believe the model would work decently for the purposes of this problem but it could use more tuning than is unavailabe from either of these models. The RMSE error is off by thousands and that can make for some missteps since it refers to the Item outlet sales range from 0-12000 and the R2 score denotes that there's about a 40% error variance.
 
 ## Recommendations:
 
