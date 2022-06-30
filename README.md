@@ -37,32 +37,3 @@ Finally, I created 2 machine learning models and evaluated their performance and
 ![Barplot 2](https://user-images.githubusercontent.com/105755535/176514655-dfe94616-2a01-4e99-b2f7-231c66914d16.png)
 >A complex barplot going over the maximum retail price for items purchased by each type of store
 
-## Linear Regression vs Regression Trees
-
-Both of the models built have issues, they have only a moderate R2 averaging around 50-60 which means an error variance of around 40% and they have high RSME which means errors in the thousands.
-Both of the R2 are pretty close, so this means both are fitted well, the Regression tree one was a a little more so after its tuning.
-
-After comparing these 2 and moderate deliberation, I decided the Regtree one was more fitting, literally!
-The Regression tree is slightly more apart in its score than the Line Regression model, but not by a signifcant degree which gives you a stronger 60% on its trained data. its RMSE is both lower than the LineReg's model as well as closer together on train & test than Line's which means the margin for error is lesser as well.
-
-I've put below the 2 most important metrics from the training and test side of both which I went over above
-#### **RegTree important metrics (from the tuned depth 5 model)**
-- Dectree5 R2 Training: 0.6 
-- Dectree5 R2 Training: 0.59
-- DecTree5 Train RMSE: 1082.7121818891044 
-- Dectree 5Test RMSE: 1057.5149155444085
-
-I believe the model would work decently for the purposes of this problem but it could use more tuning than is unavailabe from either of these models. The RMSE error is off by thousands and that can make for some missteps since it refers to the Item outlet sales range from 0-12000 and the R2 score denotes that there's about a 40% error variance.
-
-## Recommendations:
-
-
-
-## Limitations & Next Steps
-There could be more model testing done on the values for starters, and my ability to tune is somewhat limited in general. The next steps would be to compare more models or tune the Regression tree further. I could also add more data visualizations and explore further types of graphs
-
-
-### For further information
-
-
-For any additional questions, please contact **joshguy62@gmail.com**
