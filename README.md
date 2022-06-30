@@ -25,7 +25,7 @@ the min, max, and average of things like an item's weight, retail price, Item ou
 
 I created multiple data visualizations, 2 of those mostr advanced will be outlined below with images, but most of them explore the relationship between certain features in order to make observations about the data after it was cleaned.
 
-Finally, I created 2 machine learning models and evaluated their performance and decided on which one I thought would work better.
+Finally, I created 2 machine learning models and evaluated their performance and decided on which one I thought would work better in determining the relationship between an outlet's item sales against several of the other factors I found most appropriate.
 
 ##### Item Visibility's effect on sales
 ![Scatterplot 1](https://user-images.githubusercontent.com/105755535/176532985-ef8719f4-0a14-4e52-9921-6b09d0e89a11.png)
@@ -37,3 +37,16 @@ Finally, I created 2 machine learning models and evaluated their performance and
 ![Barplot 2](https://user-images.githubusercontent.com/105755535/176514655-dfe94616-2a01-4e99-b2f7-231c66914d16.png)
 >A complex barplot going over the maximum retail price for items purchased by each type of store
 
+#### Models 
+
+I ran 2 different models, a Regression linearity model and a Regression Tree model. after running the first one and then tuning the second I came the the conclusion that the linear regression model was better for this Dataframe. both of the R^2 scores are perfectly fit, but Regtree's MSE and RMSE indicate underfitting for its errors even after being tuned better. 
+
+### Recommendations
+Use this model to determine what items to sell at specific outlets, and see which items benefit from things like item visibility or if things like Low Fat or Regular items sell better.
+
+### Limitations and Next steps
+This is a rather simplistic overview of the data, the there were only two fitted models. The next steps would be to find and analyze more advanced data visulizations, and compare more types of models and the metrics.
+
+### Questions & Contact
+
+for any questions, please contact joshguy62@gmail.com
