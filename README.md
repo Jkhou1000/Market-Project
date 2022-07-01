@@ -39,7 +39,17 @@ Finally, I created 2 machine learning models and evaluated their performance and
 
 #### Models 
 
-I ran 2 different models, a Regression linearity model and a Regression Tree model. after running the first one and then tuning the second I came the the conclusion that the linear regression model was better for this Dataframe. both of the R^2 scores are perfectly fit, but Regtree's MSE and RMSE indicate underfitting for its errors even after being tuned better. 
+I ran 2 different models, a Regression linearity model and a Regression Tree model. after running the first one and then tuning the second I came the the conclusion that the linear regression model was better for this Dataframe. both of the R^2 scores are perfectly fit, but Regtree's MSE and RMSE are not fit as well, while the Regressions line are both closer, well fitted, and are smaller than the Dectree's test RMSE of around 6!
+
+- LineReg Train RMSE: 2.348919483042581e-12
+- LineReg Test RMSE: 2.3097113387245385e-12
+- DecTree Train RMSE(depth12): 0.1905657658268735
+- Dectree Test RMSE(depth12): 6.414857400426817
+
+- Dectree (depth12tune) R2 Training: 0.9999999877290574
+- Dectree (depth12tune) R2 Test: 0.9999850849096693
+- Linereg Train R2: 1.0
+- Linereg Test R2: 1.0
 
 ### Recommendations
 Use this model to determine what items to sell at specific outlets, and see which items benefit from things like item visibility or if things like Low Fat or Regular items sell better.
