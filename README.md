@@ -55,7 +55,7 @@ I ran 2 different models, a Regression linearity model and a Regression Tree mod
 Use this model to determine what items to sell at specific outlets, and see which items benefit from things like item visibility or if things like Low Fat or Regular items sell better.
 
 ### Limitations and Next steps
-This is a rather simplistic overview of the data, the there were only two fitted models. The next steps would be to find and analyze more advanced data visulizations, and compare more types of models and the metrics.
+This is a rather simplistic overview of the data, and there were only two fitted models. The next steps would be to find and analyze more advanced data visulizations, and compare more types of models and the metrics.
 
 ### Questions & Contact
 
