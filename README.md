@@ -59,4 +59,4 @@ This is a rather simplistic overview of the data, and there were only two fitted
 
 ### Questions & Contact
 
-for any questions, please contact joshguy62@gmail.com
+for any questions, please contact jkhoury10000@gmail.com
